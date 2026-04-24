@@ -13,7 +13,7 @@
          <div class="nav-logo border">
           <div class="logo"></div>
          </div>
-        <div class="nav-address border">
+         <div class="nav-address border">
             <p class="add-first">Deliver To</p>
             <div class="add-icon">
                 <i class="fa-solid fa-location-crosshairs"></i>
@@ -41,6 +41,26 @@
             <i class="fa-solid fa-cart-arrow-down"></i>
             Cart
         </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="nav-signin border">
+                <p><span>Hello,sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& orders</p>
+            </div>
+            <div class="nav-address border">
+                <p class="add-first">Deliver To</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                   <p class="add-second">India</p>
+                   </div>
+            </div>
         </div>
         <div class="panel">
             <div class="panel-all">
@@ -169,6 +189,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+        
+        // Back to top functionality
+        document.querySelector('.foot-panel1').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
     
 </body>
 </html>
